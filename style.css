@@ -93,3 +93,26 @@ footer {
     color: rgb(255, 255, 255);
     margin-top: 2rem;
 }
+
+
+/* Mobile scaling */
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    } 
+}
+
+@media screen and (min-width: 1024) {
+    body {
+        font-size: 18px;
+    } 
+}
+
+@media screen and (min-width: 1440) {
+    body {
+        font-size: 18px;
+    } 
+}
+
+

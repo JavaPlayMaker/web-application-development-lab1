@@ -1,3 +1,10 @@
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
 document.getElementById('updateProductBtn').addEventListener('click', () => {
   const loader = document.querySelector('.loader');
   const output = document.getElementById('apiOutput');

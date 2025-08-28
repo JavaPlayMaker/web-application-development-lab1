@@ -55,6 +55,18 @@ main {
     margin: 0 auto;
 }
 
+
+.menu-toggle {
+font-size: 28px;
+position: absolute;
+color: white;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+
+}
+
 .intro {
     flex: 2 1 60%;
     background-color: #f0f0ff;
@@ -104,13 +116,43 @@ footer {
   animation: spin 2s linear infinite;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+/*Screen */
+
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #aebaff;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
-
-/* Mobile scaling */
 
 @media screen and (min-width: 600px) {
     body {
@@ -118,16 +160,34 @@ footer {
     } 
 }
 
-@media screen and (min-width: 1024) {
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
     body {
         font-size: 18px;
     } 
 }
-
-@media screen and (min-width: 1440) {
-    body {
-        font-size: 18px;
-    } 
-}
-
-

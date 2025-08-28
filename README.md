@@ -1,0 +1,1 @@
+Doing an assignement based of what written on the pdf "["text"](Laboration1-VG.pdf)"

@@ -17,6 +17,12 @@ header {
     color: white;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 
 nav {
@@ -40,7 +46,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 
 /* Main */
@@ -116,6 +121,14 @@ footer {
   animation: spin 2s linear infinite;
 }
 
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+
 /*Screen */
 
 
@@ -161,7 +174,7 @@ footer {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     body {
         font-size: 18px;
     }
